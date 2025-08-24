@@ -53,9 +53,7 @@ GetCharactersResultResponseDto _$GetCharactersResultResponseDtoFromJson(
   gender: json['gender'] as String,
   image: json['image'] as String,
   url: json['url'] as String,
-  episodes: (json['episodes'] as List<dynamic>)
-      .map((e) => e as String)
-      .toList(),
+  episode: (json['episode'] as List<dynamic>).map((e) => e as String).toList(),
   created: json['created'] as String,
 );
 
@@ -70,6 +68,6 @@ Map<String, dynamic> _$GetCharactersResultResponseDtoToJson(
   'gender': instance.gender,
   'image': instance.image,
   'url': instance.url,
-  'episodes': instance.episodes,
+  'episode': instance.episode,
   'created': instance.created,
 };

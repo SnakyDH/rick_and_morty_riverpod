@@ -1,16 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:rick_and_morty_riverpod/core/l10n/app_localizations.dart';
+import 'package:rick_and_morty_riverpod/features/translations/presentation/widgets/language_switch.dart';
 
 class RmAppBar extends StatelessWidget implements PreferredSizeWidget {
-  const RmAppBar({super.key});
+  final String title;
+  final List<Widget>? actions;
+  final Widget? leading;
+  const RmAppBar({super.key, required this.title, this.actions, this.leading});
 
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      leading: leading,
+      actions: actions ?? [const LanguageSwitch()],
       title: Column(
         spacing: 5,
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: [Text(S.of(context)!.allCharacters), Divider(height: 2)],
+        children: [Text(title), Divider(height: 2)],
       ),
     );
   }

@@ -14,7 +14,7 @@ class CharacterApiMapper {
       gender: _getGender(dto.gender),
       status: _getStatus(dto.status),
       species: dto.species,
-      quantityEpisodes: dto.episodes.length,
+      quantityEpisodes: dto.episode.length,
       locationName: dto.location.name,
       originName: dto.origin.name,
     );

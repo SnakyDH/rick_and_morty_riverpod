@@ -7,5 +7,49 @@
   "allCharacters": "Todos los personajes",
   "@allCharacters": {
     "description": "El título de la pantalla de todos los personajes"
+  },
+  "charactersNotFound": "No se encontraron personajes",
+  "@charactersNotFound": {
+    "description": "El mensaje que se muestra cuando no se encuentran personajes"
+  },
+  "characterDetail": "Detalle del personaje",
+  "@characterDetail": {
+    "description": "El título de la pantalla de detalles del personaje"
+  },
+  "status": "Estado:",
+  "@status": {
+    "description": "El estado del personaje"
+  },
+  "origin": "Origen:",
+  "@origin": {
+    "description": "El origen del personaje"
+  },
+  "lastLocation": "Ultima ubicación conocida:",
+  "@lastLocation": {
+    "description": "La última ubicación conocida del personaje"
+  },
+  "species": "Especie:",
+  "@species": {
+    "description": "La especie del personaje"
+  },
+  "gender": "Género:",
+  "@gender": {
+    "description": "El género del personaje"
+  },
+  "language": "Idioma",
+  "@language": {
+    "description": "El idioma de la aplicación"
+  },
+  "english": "Inglés",
+  "@english": {
+    "description": "El nombre del idioma inglés"
+  },
+  "spanish": "Español",
+  "@spanish": {
+    "description": "El nombre del idioma español"
+  },
+  "unknown": "Desconocido",
+  "@unknown": {
+    "description": "Valor desconocido"
   }
 }

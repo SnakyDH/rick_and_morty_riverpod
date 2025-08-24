@@ -13,8 +13,8 @@ class CharacterApiDataSourceImpl implements CharacterDataSource {
   CharacterApiDataSourceImpl(this._apiService);
 
   @override
-  Future<Paginated<Character>> getCharacters() async {
-    final response = await _apiService.get('/api/character');
+  Future<Paginated<Character>> getCharacters({String? nextUrl}) async {
+    final response = await _apiService.get(nextUrl ?? '/api/character');
     final data = GetCharactersListResponseDto.fromJson(response.data);
     return CharactersListApiMapper.fromDto(data);
   }

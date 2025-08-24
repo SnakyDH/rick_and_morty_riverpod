@@ -15,7 +15,7 @@ class GetCharacterResponseDto {
   final String created;
   final OriginResponseDto origin;
   final LocationResponseDto location;
-  final List<String> episodes;
+  final List<String> episode;
 
   GetCharacterResponseDto({
     required this.id,
@@ -29,7 +29,7 @@ class GetCharacterResponseDto {
     required this.created,
     required this.origin,
     required this.location,
-    required this.episodes,
+    required this.episode,
   });
 
   factory GetCharacterResponseDto.fromJson(Map<String, dynamic> json) =>

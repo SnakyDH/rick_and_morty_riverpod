@@ -22,9 +22,7 @@ GetCharacterResponseDto _$GetCharacterResponseDtoFromJson(
   location: LocationResponseDto.fromJson(
     json['location'] as Map<String, dynamic>,
   ),
-  episodes: (json['episodes'] as List<dynamic>)
-      .map((e) => e as String)
-      .toList(),
+  episode: (json['episode'] as List<dynamic>).map((e) => e as String).toList(),
 );
 
 Map<String, dynamic> _$GetCharacterResponseDtoToJson(
@@ -41,7 +39,7 @@ Map<String, dynamic> _$GetCharacterResponseDtoToJson(
   'created': instance.created,
   'origin': instance.origin,
   'location': instance.location,
-  'episodes': instance.episodes,
+  'episode': instance.episode,
 };
 
 OriginResponseDto _$OriginResponseDtoFromJson(Map<String, dynamic> json) =>

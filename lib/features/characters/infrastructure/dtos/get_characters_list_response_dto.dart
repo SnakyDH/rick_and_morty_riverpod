@@ -42,7 +42,7 @@ class GetCharactersResultResponseDto {
   final String gender;
   final String image;
   final String url;
-  final List<String> episodes;
+  final List<String> episode;
   final String created;
 
   GetCharactersResultResponseDto({
@@ -54,7 +54,7 @@ class GetCharactersResultResponseDto {
     required this.gender,
     required this.image,
     required this.url,
-    required this.episodes,
+    required this.episode,
     required this.created,
   });
 

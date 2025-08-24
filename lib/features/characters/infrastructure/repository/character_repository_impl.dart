@@ -14,7 +14,7 @@ class CharacterRepositoryImpl implements CharacterRepository {
   }
 
   @override
-  Future<Paginated<Character>> getCharacters() {
-    return _characterDataSource.getCharacters();
+  Future<Paginated<Character>> getCharacters({String? nextUrl}) {
+    return _characterDataSource.getCharacters(nextUrl: nextUrl);
   }
 }

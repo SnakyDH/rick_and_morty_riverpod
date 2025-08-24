@@ -10,7 +10,7 @@ class ApiService {
       connectTimeout: _timeOut,
       receiveTimeout: _timeOut,
       sendTimeout: _timeOut,
-      baseUrl: EnvironmentConstants.apiUrl,
+      baseUrl: Environment.apiUrl,
       contentType: 'application/json',
     ),
   );
@@ -28,10 +28,7 @@ class ApiService {
 
     _dio.interceptors.add(
       InterceptorsWrapper(
-        // ignore: avoid-passing-async-when-sync-expected
         onRequest: (options, handler) async {
-          final headers = await _getHeaders();
-          options.headers.addAll(headers);
           return handler.next(options);
         },
         onResponse: (response, handler) {
@@ -42,10 +39,6 @@ class ApiService {
         },
       ),
     );
-  }
-
-  Future<Map<String, dynamic>> _getHeaders() async {
-    return {'key': 'value'};
   }
 
   Future<Response> get(

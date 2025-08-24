@@ -13,4 +13,37 @@ class SEs extends S {
 
   @override
   String get allCharacters => 'Todos los personajes';
+
+  @override
+  String get charactersNotFound => 'No se encontraron personajes';
+
+  @override
+  String get characterDetail => 'Detalle del personaje';
+
+  @override
+  String get status => 'Estado:';
+
+  @override
+  String get origin => 'Origen:';
+
+  @override
+  String get lastLocation => 'Ultima ubicación conocida:';
+
+  @override
+  String get species => 'Especie:';
+
+  @override
+  String get gender => 'Género:';
+
+  @override
+  String get english => 'Inglés';
+
+  @override
+  String get spanish => 'Español';
+
+  @override
+  String get unknown => 'Desconocido';
+
+  @override
+  String get language => 'Idioma';
 }

@@ -13,4 +13,37 @@ class SEn extends S {
 
   @override
   String get allCharacters => 'All characters';
+
+  @override
+  String get charactersNotFound => 'No characters found';
+
+  @override
+  String get characterDetail => 'Character detail';
+
+  @override
+  String get status => 'Status:';
+
+  @override
+  String get origin => 'Origin:';
+
+  @override
+  String get lastLocation => 'Last known location:';
+
+  @override
+  String get species => 'Species:';
+
+  @override
+  String get gender => 'Gender:';
+
+  @override
+  String get english => 'English';
+
+  @override
+  String get spanish => 'Spanish';
+
+  @override
+  String get unknown => 'Unknown';
+
+  @override
+  String get language => 'Language';
 }

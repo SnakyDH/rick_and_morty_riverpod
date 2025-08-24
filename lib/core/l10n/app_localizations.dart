@@ -108,6 +108,72 @@ abstract class S {
   /// In en, this message translates to:
   /// **'All characters'**
   String get allCharacters;
+
+  /// The message that is shown when no characters are found
+  ///
+  /// In en, this message translates to:
+  /// **'No characters found'**
+  String get charactersNotFound;
+
+  /// The title of the character detail screen
+  ///
+  /// In en, this message translates to:
+  /// **'Character detail'**
+  String get characterDetail;
+
+  /// The status of the character
+  ///
+  /// In en, this message translates to:
+  /// **'Status:'**
+  String get status;
+
+  /// The origin of the character
+  ///
+  /// In en, this message translates to:
+  /// **'Origin:'**
+  String get origin;
+
+  /// The last known location of the character
+  ///
+  /// In en, this message translates to:
+  /// **'Last known location:'**
+  String get lastLocation;
+
+  /// The species of the character
+  ///
+  /// In en, this message translates to:
+  /// **'Species:'**
+  String get species;
+
+  /// The gender of the character
+  ///
+  /// In en, this message translates to:
+  /// **'Gender:'**
+  String get gender;
+
+  /// The English language name
+  ///
+  /// In en, this message translates to:
+  /// **'English'**
+  String get english;
+
+  /// The Spanish language name
+  ///
+  /// In en, this message translates to:
+  /// **'Spanish'**
+  String get spanish;
+
+  /// Unknown value
+  ///
+  /// In en, this message translates to:
+  /// **'Unknown'**
+  String get unknown;
+
+  /// The language of the application
+  ///
+  /// In en, this message translates to:
+  /// **'Language'**
+  String get language;
 }
 
 class _SDelegate extends LocalizationsDelegate<S> {

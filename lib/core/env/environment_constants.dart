@@ -1,8 +1,8 @@
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
-class EnvironmentConstants {
+class Environment {
   static String apiUrl = dotenv.env['API_URL'] ?? '';
-  EnvironmentConstants._();
+  Environment._();
 
   static Future<void> initEnvironment() async {
     await dotenv.load(fileName: '.env');
