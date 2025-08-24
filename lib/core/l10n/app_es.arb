@@ -1,0 +1,7 @@
+{
+  "@@locale": "es",
+  "appTitle": "Rick and Morty",
+  "@appTitle": {
+    "description": "Título de la aplicación"
+  }
+}
