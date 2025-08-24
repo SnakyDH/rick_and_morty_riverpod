@@ -10,4 +10,7 @@ class SEs extends S {
 
   @override
   String get appTitle => 'Rick and Morty';
+
+  @override
+  String get allCharacters => 'Todos los personajes';
 }

@@ -102,6 +102,12 @@ abstract class S {
   /// In en, this message translates to:
   /// **'Rick and Morty'**
   String get appTitle;
+
+  /// The title of the all characters screen
+  ///
+  /// In en, this message translates to:
+  /// **'All characters'**
+  String get allCharacters;
 }
 
 class _SDelegate extends LocalizationsDelegate<S> {

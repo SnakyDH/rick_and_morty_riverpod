@@ -3,5 +3,9 @@
   "appTitle": "Rick and Morty",
   "@appTitle": {
     "description": "The title of the application"
+  },
+  "allCharacters": "All characters",
+  "@allCharacters": {
+    "description": "The title of the all characters screen"
   }
 }
